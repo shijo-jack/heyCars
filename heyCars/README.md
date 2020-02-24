@@ -46,7 +46,7 @@ following format to the /vehicle_listings/endpoint via POST:
 3. H2 in-memory database
 4. Lombok
 5. JPA Specifications
-6. IntelliJ IDE
+6. STS
 
 # APIs Exposed
 
@@ -62,7 +62,6 @@ following format to the /vehicle_listings/endpoint via POST:
 GET /search?make=mercedes&amp; model=222&amp; year=2019&amp; color=green HTTP/1.1
 Host: localhost:8080
 cache-control: no-cache
-Postman-Token: 43d3895a-d820-4330-a4dc-c13778966d48
 
 ```
 
@@ -75,10 +74,6 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0g
 cache-control: no-cache
 Postman-Token: 8401e383-13a6-41fe-84f9-c2a61513e530
 
-Content-Disposition: form-data; name="file"; filename="C:\Users\vingupta3\Desktop\ss.csv
-
-
-------WebKitFormBoundary7MA4YWxkTrZu0gW--
 ```
 
 3. POST : /vehicle_listings/{dealerId}/
@@ -99,7 +94,7 @@ Postman-Token: 84c33c0f-72e0-4025-94f5-7004014e1aef
 "color": "red",
 "price": 13990
 }
-]------WebKitFormBoundary7MA4YWxkTrZu0gW--
+]
 
 ```
 
@@ -194,12 +189,6 @@ On running the above URL with GET method on POSTMAN or any other rest client of 
 The documentation can be found in swagger API : http://localhost:8080/swagger-ui.html# 
 
 # Questions Asked
-• Problems you discovered
-```
-1. The main problem I found here is the contract for request parameter was different when it comes to save the data.
-   Because of which, I need to create a mapper in order to specify the format for saving the data.
-2. No authenticity of information.
-
 ```
 • Executed tests and results
 
@@ -211,13 +200,8 @@ All test cases are written in the test folders which can be executed directly to
 implement them
 
 ```
-Initially, I thought of creating this project in play with akka in order to make all the calls async and 
-thereby tuning the application better.
-Thereafter, I switched to Spring as the community of Spring is very large as compared to play with akka.
-
-If I had time, then I would have preferred to use Spring 5 in order to make all the calls async by making the full use of CompletableFuture and CompletionStage APIs.
-
-I would also like to dockerize my application had that application already installed in my machine. 
+I would have created dockerized application.
+Imporved the code quality.
 
 ```
 
