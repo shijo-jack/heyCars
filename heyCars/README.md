@@ -54,7 +54,7 @@ following format to the /vehicle_listings/endpoint via POST:
 2. POST : http://localhost:8080/upload_csv/{dealerId}/
 3. POST : http://localhost:8080/vehicle_listings/{dealerId}/
 
-# Sample cURL 
+# Sample URL 
 
 1. GET : /search API : 
 
