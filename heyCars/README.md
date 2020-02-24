@@ -65,18 +65,7 @@ cache-control: no-cache
 
 ```
 
-2. POST : /upload_csv/{dealerId}
-
-```
-POST /upload_csv/113/ HTTP/1.1
-Host: localhost:8080
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
-cache-control: no-cache
-Postman-Token: 8401e383-13a6-41fe-84f9-c2a61513e530
-
-```
-
-3. POST : /vehicle_listings/{dealerId}/
+2. POST : /vehicle_listings/{dealerId}/
 
 ```
 POST /vehicle_listings/123/ HTTP/1.1
